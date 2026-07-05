@@ -1,0 +1,13 @@
+name: defualt ci pipeline
+on: [pull_request]
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+        steps:
+            # 0. source code checkout
+            - uses: actions/checkout@v3
+            
+            # 1. dependencies
+
+            # 2. linting
